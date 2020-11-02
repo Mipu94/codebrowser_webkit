@@ -1,2 +1,4 @@
-docker build . --build-arg WEBKIT_VERSION=2.28.3 -t woboq_webkit2.28.3
-docker run  -p 80:80 -d  woboq_webkit2.28.3
+#!/bin/bash
+WEBKIT_VERSION=2.30.2
+docker build . -t webkit_woboq --build-arg WEBKIT_VERSION=${WEBKIT_VERSION}
+docker run  -p 80:80 -d  --name=webkit${WEBKIT_VERSION}_woboq
