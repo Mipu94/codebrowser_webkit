@@ -71,7 +71,6 @@ RUN mv /root/public_html/* /var/www/html/ && \
 
 # clean
 RUN rm -rf /root/woboq_codebrowser /root/clang /root/webkitgtk*
-RUN ls
 
 EXPOSE 80
 
